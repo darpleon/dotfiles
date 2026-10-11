@@ -62,4 +62,17 @@ fi
 
 eval "$(starship init zsh)"
 
+# bun completions
+[ -s "/home/nato/.bun/_bun" ] && source "/home/nato/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="/opt/zig/current:$PATH"
+
 fastfetch
+
+# Pi
+export PATH="/home/nato/.pi/agent/bin:$PATH"
+export PATH="/home/nato/.local/bin:$PATH"
